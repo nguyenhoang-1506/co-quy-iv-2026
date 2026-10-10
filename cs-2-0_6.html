@@ -426,7 +426,7 @@ main{padding:30px 40px 90px;min-width:0}
 .csa-zone{position:relative;margin-top:6px;padding:22px 10px 10px;border-radius:14px;border:2px dashed var(--app);background:var(--app-s);display:grid;gap:6px}
 .csa-zone .zl{position:absolute;top:-12px;left:12px;background:var(--app);color:#fff;font-size:11px;font-weight:800;letter-spacing:.04em;padding:2px 10px;border-radius:99px}
 .csa-zone .zl small{font-weight:600;opacity:.9}
-.csa{cursor:pointer;font-family:var(--sans);text-align:left;color:var(--ink);background:var(--panel);border:1.5px solid var(--app);width:100%}
+.csa{font-family:var(--sans);text-align:left;color:var(--ink);background:var(--panel);border:1.5px solid var(--app);width:100%}
 .csa .av{color:var(--app);border-color:var(--app)}
 .csa .lvb{color:var(--app)}
 .csa .cst{font-size:10.5px;font-weight:800;padding:1px 7px;border-radius:5px;white-space:nowrap;display:none}
@@ -455,6 +455,40 @@ main{padding:30px 40px 90px;min-width:0}
 .fate-col.out b{color:var(--muted)}
 .fate-ar{display:flex;align-items:center;font-size:22px;font-weight:800;color:var(--muted)}
 .no-csa{margin-top:6px;padding:10px;border-radius:12px;border:1.5px solid var(--line);background:var(--soft);text-align:center;font-size:13px;font-weight:700;color:var(--muted)}
+.grow-pill{justify-self:start;font-size:12.5px;font-weight:800;padding:4px 12px;border-radius:99px;background:var(--core-s);color:var(--core-ink);border:1.5px solid var(--core)}
+.svc-wrap{margin-top:12px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:12px;align-items:stretch}
+.svc-flow{padding:16px;display:flex;flex-direction:column;gap:8px;justify-content:center}
+.sf{border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:2px;border:1.5px solid}
+.sf b{font-size:26px;font-weight:800;line-height:1.15}
+.sf small{font-size:12.5px;color:var(--muted)}
+.sf.now{background:var(--app-s);border-color:var(--app);border-style:dashed}
+.sf.now b{color:var(--app)}
+.sf.grow{background:var(--core-s);border-color:var(--core)}
+.sf.grow b{color:var(--core-ink)}
+.sf-ar{text-align:center;font-size:22px;font-weight:800;color:var(--core)}
+.svc{padding:18px;display:grid;grid-template-columns:minmax(0,1fr) 56px 200px 56px minmax(0,1fr);align-items:center;gap:0}
+.svc-col{display:grid;gap:8px;min-width:0}
+.svc-col .lbl{margin-bottom:2px}
+.sw{padding:10px 12px;border-radius:12px;background:var(--app-s);border:1.5px solid var(--app);font-size:13.5px;font-weight:600}
+.svc-link{display:flex;align-items:center;justify-content:center;gap:0;color:var(--app);font-weight:800;font-size:18px}
+.svc-link i{flex:1;height:0;border-top:2px dashed var(--app)}
+.svc-hub{position:relative;justify-self:center;width:190px;height:190px;border-radius:50%;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--app) 70%,#fff),var(--app));color:var(--on-fd);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 0 0 10px var(--app-s),0 14px 40px color-mix(in srgb,var(--app) 40%,transparent)}
+.svc-hub .lbl{color:inherit;opacity:.85}
+.svc-hub b{font-size:40px;font-weight:800;line-height:1;margin-top:4px}
+.svc-hub em{font-style:normal;font-size:15px;font-weight:800;letter-spacing:.18em;margin-top:2px}
+.svc-hub small{font-size:11.5px;opacity:.9;margin-top:6px;max-width:140px;line-height:1.3}
+.svc-hub .ring{position:absolute;inset:-18px;border-radius:50%;border:2px dashed var(--app);opacity:.6}
+@media (prefers-reduced-motion:no-preference){.svc-hub .ring{animation:spin 30s linear infinite}}
+.pl{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:12px;background:var(--fd-s);border:1px solid var(--line);font-size:13.5px}
+.pl b{font-size:11px;font-weight:800;padding:1px 7px;border-radius:5px;background:var(--panel);color:var(--fd)}
+.pl span:last-child{font-weight:600}
+.plug{flex:0 0 22px;height:16px;border-radius:4px 0 0 4px;background:var(--app);position:relative;display:block}
+.plug i{position:absolute;right:-6px;width:6px;height:3px;background:var(--app);border-radius:0 2px 2px 0}
+.plug i:first-child{top:3px}.plug i:last-child{bottom:3px}
+.svc-learn{margin-top:12px;padding:14px 18px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;border:1.5px solid var(--app)}
+.sl-k{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--on-fd);background:var(--app);padding:3px 10px;border-radius:99px}
+.svc-learn b{font-size:17px;font-weight:800}
+.sl-t{font-size:14px;color:var(--muted)}
 .src{margin-top:10px;font-size:12.5px;color:var(--muted)}
 footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 
@@ -468,8 +502,15 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);font-si
   .org-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
   .teams{grid-template-columns:1fr;padding-top:0;margin-top:16px}
   .teams::before,.teams::after,.team::before{display:none}
-  .fate{grid-template-columns:1fr 1fr}
-  .fate-ar{display:none}
+  .svc-wrap{grid-template-columns:1fr}
+  .svc-flow{flex-direction:row;align-items:stretch}
+  .svc-flow .sf{flex:1}
+  .sf-ar{align-self:center;transform:rotate(-90deg)}
+  .svc{grid-template-columns:1fr;gap:12px}
+  .svc-link{height:36px;flex-direction:column}
+  .svc-link i{flex:1;width:0;height:auto;border-top:0;border-left:2px dashed var(--app)}
+  .svc-link span{transform:rotate(90deg)}
+  .svc-link.rev{flex-direction:column-reverse}
 }
 @media (max-width:980px){
   .wrap{grid-template-columns:1fr}
@@ -611,7 +652,7 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);font-si
 
     <!-- §2 -->
     <section class="sec" id="s2">
-      <div class="h2"><span class="sn">2</span><h2>Giá trị dịch chuyển lên: CS dẫn dắt, CSA làm cùng, AI tăng tốc</h2></div>
+      <div class="h2"><span class="sn">2</span><h2>Giá trị dịch chuyển lên: CS dẫn dắt, CSA Service làm cùng, AI tăng tốc</h2></div>
       <div class="card vs">
         <div class="vs-axis" aria-hidden="true"><b>GIÁ TRỊ<br>CAO</b><div class="line"></div><b>LẶP LẠI</b></div>
         <div class="vs-tiers">
@@ -624,14 +665,14 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);font-si
             </div>
             <div class="vt h"><b>CS</b><small>Dẫn dắt</small></div>
           </div>
-          <div class="vs-cut m">GIÁ TRỊ VỪA · VẪN CẦN CON NGƯỜI</div>
+          <div class="vs-cut m">GIÁ TRỊ VỪA · VẪN CẦN CON NGƯỜI · CSA SERVICE</div>
           <div class="tier">
             <div class="vs-layers">
               <div class="vl m"><span class="ic">CSA</span>Cầm tay chỉ việc cho người dùng cuối</div>
               <div class="vl m"><span class="ic">CSA</span>Nhập &amp; kiểm tra dữ liệu cùng khách</div>
               <div class="vl m"><span class="ic">CSA</span>Đôn đốc, follow-up tiến độ</div>
             </div>
-            <div class="vt m"><b>CSA</b><small>Làm cùng khách</small></div>
+            <div class="vt m"><b>CSA Service</b><small>Ai cũng nhận được</small></div>
           </div>
           <div class="vs-cut">AI TĂNG TỐC</div>
           <div class="tier">
@@ -795,21 +836,43 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);font-si
 
     <!-- §9 -->
     <section class="sec" id="s9">
-      <div class="h2"><span class="sn">9</span><h2>Đội ngũ: mỗi team 1 CSA</h2><span class="hint">Bấm vào 1 CSA để đánh dấu người giữ lại</span></div>
+      <div class="h2"><span class="sn">9</span><h2>Đội ngũ: CSA Grow lên CS, CSA trở thành Service</h2></div>
       <div class="org-kpis" id="orgKpis"></div>
       <div class="card org">
         <div class="org-legend legend">
-          <span><i class="lg-p"></i>Team lead</span><span><i class="lg-h"></i>CS</span><span><i class="lg-csa"></i>CSA · chọn 1 giữ lại</span>
+          <span><i class="lg-p"></i>Team lead</span><span><i class="lg-h"></i>CS</span><span><i class="lg-csa"></i>CSA hiện tại · Grow lên CS</span>
         </div>
         <div class="org-root"><b>CO · Hà Nội</b><small id="rootSub"></small></div>
         <div class="teams" id="teams"></div>
       </div>
-      <div class="card fate">
-        <div class="fate-col"><span class="lbl">CSA hiện tại</span><b id="fNow"></b></div>
-        <div class="fate-ar" aria-hidden="true">→</div>
-        <div class="fate-col keep"><span class="lbl">Giữ lại</span><b>1 / team</b><small>Team The Powder không cần CSA</small></div>
-        <div class="fate-col grow"><span class="lbl">Grow lên CS</span><b>↑</b><small>Đạt chuẩn CS</small></div>
-        <div class="fate-col out"><span class="lbl">Out</span><b>→</b><small>Không giữ vị trí</small></div>
+      <div class="svc-wrap">
+        <div class="card svc-flow">
+          <div class="sf now"><span class="lbl">CSA hiện tại</span><b id="fNow"></b><small>Khoanh vùng ở 3 team</small></div>
+          <div class="sf-ar" aria-hidden="true">↓</div>
+          <div class="sf grow"><span class="lbl">Grow</span><b>↑ CS</b><small>Toàn bộ chuyển lên CS</small></div>
+        </div>
+        <div class="card svc">
+          <div class="svc-col work">
+            <span class="lbl">Công việc vẫn còn đó</span>
+            <div class="sw">Cầm tay chỉ việc người dùng cuối</div>
+            <div class="sw">Nhập &amp; kiểm tra dữ liệu cùng khách</div>
+            <div class="sw">Đôn đốc, follow-up tiến độ</div>
+          </div>
+          <div class="svc-link" aria-hidden="true"><i></i><span>→</span></div>
+          <div class="svc-hub">
+            <span class="ring" aria-hidden="true"></span>
+            <span class="lbl">Role → Service</span>
+            <b>CSA</b><em>SERVICE</em>
+            <small>Như một function dùng chung</small>
+          </div>
+          <div class="svc-link rev" aria-hidden="true"><span>←</span><i></i></div>
+          <div class="svc-col plugcol" id="plugs"><span class="lbl">Cắm ai cũng được</span></div>
+        </div>
+      </div>
+      <div class="card svc-learn">
+        <span class="sl-k">Yêu cầu</span>
+        <b>Mọi nhân sự học bổ sung kỹ năng CSA</b>
+        <span class="sl-t">để sẵn sàng nhận việc CSA khi dự án cần</span>
       </div>
       <p class="src">Nguồn: CO Data Hub · dim_co.csv, cập nhật 02/10/2026</p>
     </section>
@@ -1026,8 +1089,8 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);font-si
      cs:[{u:"sondinh",n:"Đinh Trường Sơn",lv:"L1"}],
      csa:[{u:"lamtran",n:"Lâm Trần",lv:"L1"},{u:"anhhoang04",n:"Lan Anh",lv:"L0",tag:"Mới vào"}]},
     {name:"Unicorn",lead:{u:"thaotrinh",n:"Trịnh Thị Thảo",lv:"CS Level 5"},
-     cs:[{u:"huyenle02",n:"Lê Ngọc Huyền",lv:"L3"},{u:"vule02",n:"Lê Quang Vũ",lv:"L3"},{u:"anhnguyen25",n:"Nguyễn Đức Anh",lv:"L3"},{u:"quynhdang",n:"Đặng Thuý Quỳnh",lv:"L2"},{u:"hiennguyen06",n:"Nguyễn Thu Hiền",lv:"L1"},{u:"hanguyen06",n:"Nguyễn Phương Hà",lv:"CS",tag:"Mới lên CS"}],
-     csa:[{u:"hato",n:"",lv:"L1"},{u:"anhnguyen46",n:"",lv:""}]},
+     cs:[{u:"huyenle02",n:"Lê Ngọc Huyền",lv:"L3"},{u:"vule02",n:"Lê Quang Vũ",lv:"L3"},{u:"anhnguyen25",n:"Nguyễn Đức Anh",lv:"L3"},{u:"quynhdang",n:"Đặng Thuý Quỳnh",lv:"L2"},{u:"hiennguyen06",n:"Nguyễn Thu Hiền",lv:"L1"},{u:"hanguyen06",n:"Nguyễn Phương Hà",lv:"CS",tag:"Mới lên CS"},{u:"anhnguyen46",n:"",lv:"L1"}],
+     csa:[{u:"hato",n:"",lv:"L1"}]},
     {name:"The Powder",lead:{u:"nguyenhoang",n:"Hoàng Thanh Nguyện",lv:"CS Level 6"},
      cs:[{u:"huyennguyen02",n:"Nguyễn Thanh Huyền",lv:"SoE",tag:"Nghỉ thai sản"}],
      csa:[],noCsa:true}
@@ -1042,11 +1105,9 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);font-si
     h+='<div class="lead"><span class="av">'+ini(t.lead)+'</span><div class="who"><b>'+esc(t.lead.n)+'</b><small>Team lead · '+t.lead.lv+'</small></div></div>';
     h+='<div class="grp-l">CS · '+t.cs.length+'</div><div class="plist">'+t.cs.map(function(p){return pRow(p);}).join("")+(t.other?t.other.map(function(p){return pRow(p," muted");}).join(""):"")+'</div>';
     if(t.noCsa){h+='<div class="no-csa">Không cần CSA</div>';var d0=document.createElement("div");d0.className="team";d0.innerHTML=h;tEl.appendChild(d0);return;}
-    h+='<div class="csa-zone" data-t="'+ti+'"><span class="zl">CSA · '+t.csa.length+(t.csa.length>1?' <small>→ chọn 1</small>':'')+'</span>';
-    if(t.csa.length){
-      h+=t.csa.map(function(p,i){return'<button type="button" class="pp csa" data-i="'+i+'" aria-pressed="false"><span class="av">'+ini(p)+'</span>'+nm(p)+(p.tag?'<span class="tag-s">'+p.tag+'</span>':'')+'<span class="cst k">Giữ</span><span class="cst go">Grow / Out</span><span class="lvb">CSA'+(p.lv?' '+p.lv:'')+'</span></button>';}).join("");
-      h+=t.csa.length>1?'<div class="paths"><span class="n">Còn lại '+(t.csa.length-1)+' người:</span><span class="g">↑ Grow lên CS</span><span class="o">→ Out</span></div>':'<div class="paths"><span class="n">Đã đúng 1 CSA</span></div>';
-    }else h+='<div class="csa-empty">Chưa có CSA</div>';
+    h+='<div class="csa-zone"><span class="zl">CSA · '+t.csa.length+'</span>';
+    h+=t.csa.map(function(p){return'<div class="pp csa"><span class="av">'+ini(p)+'</span>'+nm(p)+(p.tag?'<span class="tag-s">'+p.tag+'</span>':'')+'<span class="lvb">CSA'+(p.lv?' '+p.lv:'')+'</span></div>';}).join("");
+    h+='<div class="grow-pill">↑ Grow lên CS</div>';
     h+='</div>';
     var d=document.createElement("div");d.className="team";d.innerHTML=h;tEl.appendChild(d);
   });
@@ -1056,19 +1117,9 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);font-si
   document.getElementById("orgKpis").innerHTML=
     '<div class="ok"><b>'+TEAMS.length+'</b><span>Team</span></div>'+
     '<div class="ok"><b>'+tot+'</b><span>Nhân sự<br>đang làm</span></div>'+
-    '<div class="ok csa"><b>'+totCsa+'</b><span>CSA<br>hiện tại</span></div>'+
-    '<div class="ok tg"><b>1</b><span>CSA / team<br>mục tiêu (trừ The Powder)</span></div>';
-  tEl.querySelectorAll(".csa-zone").forEach(function(z){
-    z.querySelectorAll(".csa").forEach(function(b){
-      b.addEventListener("click",function(){
-        var on=b.classList.contains("keep");
-        z.querySelectorAll(".csa").forEach(function(x){x.classList.remove("keep");x.setAttribute("aria-pressed","false");});
-        if(!on){b.classList.add("keep");b.setAttribute("aria-pressed","true");}
-        z.classList.toggle("picked",!on);
-      });
-    });
-  });
-
+    '<div class="ok tg"><b>'+totCsa+'</b><span>CSA hiện tại<br>↑ Grow lên CS</span></div>'+
+    '<div class="ok csa"><b>1</b><span>CSA Service<br>dùng chung toàn đội</span></div>';
+  document.getElementById("plugs").innerHTML+=TEAMS.map(function(t){return'<div class="pl"><span class="plug" aria-hidden="true"><i></i><i></i></span><b>CS</b><span>'+t.name+'</span></div>';}).join("");
 
   /* hero twinkle + page-wide rising meteors */
   (function(){
